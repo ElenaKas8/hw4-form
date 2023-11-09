@@ -1,9 +1,10 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     color: black;
     text-decoration: none;
+    outline: none;
 }
 
 body {
@@ -14,8 +15,6 @@ body {
     display: flex;
     width: 673px;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 .formbox {
@@ -28,20 +27,23 @@ body {
 
 .header {
     width: 511px;
-    height: 126px;
+    height: 260px;
     background-color: #87CEFA;
-    height: 250px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 
 
 }
 
+
 h1 {
     color: white;
     font-size: 60px;
-    width: 40%;
-    text-align: center;
+    line-height: 65px;
+    width: 70%;
+
 }
 
 input,
@@ -53,12 +55,17 @@ textarea {
     border-radius: 5px;
     margin: 10px 0;
     border: 1px solid #CCCCCC;
+    color: #757575;
+    font-family: Inter;
+    font-size: 13.672px;
+    font-weight: 400;
 }
 
 input[type=radio],
 input[type=checkbox] {
     width: auto;
     display: inline-block;
+
 }
 
 
@@ -74,5 +81,16 @@ textarea:focus {
     border-radius: 5px;
     color: white;
     background-color: blue;
+    width: 157px;
+    height: 42px;
+    padding: 10px 3.21px 10px 9.79px;
+    align-items: center;
+    border-style: none;
+    transition: 5ms;
 
+}
+
+.button>button:hover {
+    background-color: rgb(83, 83, 220);
+    cursor: pointer;
 }
